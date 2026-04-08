@@ -17,9 +17,8 @@ MemoryCaptures/
 *.unityproj
 *.booproj
 
-# VS Code / Visual Studio
+# Visual Studio 2022
 .vs/
-.vscode/
 
 # Claude Code
 .claude/
