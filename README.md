@@ -16,7 +16,34 @@
 - Unity 2022.3.62f1 LTS
 - VS Code + C# Dev Kit + Unity 插件
 
-## 目录结构
+## 根目录结构
+
+### 需要关注的目录和文件
+
+| 路径 | 说明 |
+|------|------|
+| `Assets/` | 游戏资源，所有开发工作都在这里 |
+| `Packages/` | Unity 包依赖配置（`manifest.json`），进 Git |
+| `ProjectSettings/` | Unity 项目设置（物理、输入、层级等），进 Git |
+| `.vscode/` | VS Code 工作区配置（插件推荐、调试配置），进 Git |
+| `.editorconfig` | 统一代码格式规范，进 Git |
+| `.gitignore` | Git 忽略规则，进 Git |
+| `README.md` | 项目说明文档，进 Git |
+| `LICENSE` | MIT 开源协议，进 Git |
+| `CLAUDE.md` | Claude Code 项目上下文说明，进 Git |
+
+### 自动生成、无需关注
+
+| 路径 | 说明 |
+|------|------|
+| `Library/` | Unity 编译缓存，自动生成，不进 Git |
+| `Temp/` | Unity 临时文件，自动生成，不进 Git |
+| `Logs/` | Unity 运行日志，自动生成，不进 Git |
+| `obj/` | C# 编译中间文件，自动生成，不进 Git |
+| `UserSettings/` | 个人编辑器偏好（窗口布局等），不进 Git |
+| `*.csproj` / `*.sln` | VS Code IntelliSense 用的项目文件，Unity 自动生成，不进 Git |
+
+### Assets 目录结构
 
 ```
 Assets/
