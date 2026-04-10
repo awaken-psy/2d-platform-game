@@ -2,22 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trap_Trampoline : MonoBehaviour
+public class Trap_FireButton : MonoBehaviour
 {
-    protected Animator anim;
-    [SerializeField] private float pushPower = 25f;
-    [SerializeField] private float pushDuration = .5f;
-    [SerializeField] private float pushDuration222 = .5f;
+    private Animator anim;
+    private Trap_Fire trapFire;
 
     private void Awake() {
         anim = GetComponent<Animator>();
+        trapFire = GetComponentInParent<Trap_Fire>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
         player player = collision.gameObject.GetComponent<player>();
         if (player != null) {
-            player.Push(transform.up * pushPower, pushDuration);
             anim.SetTrigger("activated");
+            trapFire.SwitchOffFire();
         }
     }
 }

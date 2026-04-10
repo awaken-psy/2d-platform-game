@@ -8,21 +8,24 @@ public class Trap_FallingPlatform : MonoBehaviour
     private Rigidbody2D rb;
     private Collider2D[] colliders;
 
+
     [SerializeField] private float speed = .75f;
     [SerializeField] private float travelDistance;
     public Vector3[] wayPoints;
     private int wayPointIndex;
     private bool canMove = false;
 
+
     [Header("Platform Fall Detail")]
     [SerializeField] private float impactSpeed = 3f;
-
     [SerializeField] private float impactDuration = 0.1f;
     private float impactTimer;
     private bool impactHappened;
 
+
     [Space]
     [SerializeField] private float fallDelay = 0.5f;
+
 
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
@@ -38,6 +41,10 @@ public class Trap_FallingPlatform : MonoBehaviour
     }
 
     private void Update() {
+        // 触发流程：玩家踩上
+        // → OnTriggerEnter2D 设置 impactTimer(0.1s)
+        // → HandleImpact 在 0.1s 内让平台轻微下沉（视觉反馈）
+        // → fallDelay(0.5s) 后调用 SwitchOffPlatform，平台正式坠落
         HandleImpact();
         HandleMovement();
     }
@@ -64,7 +71,8 @@ public class Trap_FallingPlatform : MonoBehaviour
     }
 
     private void HandleImpact() {
-        if (impactTimer < 0) return;
+        if (impactTimer <= 0)
+            return;
         impactTimer -= Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, transform.position + Vector3.down, impactSpeed * Time.deltaTime);
     }

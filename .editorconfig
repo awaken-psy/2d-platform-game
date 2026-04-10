@@ -11,8 +11,8 @@ indent_style = space
 indent_size = 4
 tab_width = 4
 
-# 大括号换行（Allman style）
-csharp_new_line_before_open_brace = all
+# 大括号换行：类型/属性等保持 Allman，函数和控制流左括号不单独起一行
+csharp_new_line_before_open_brace = types, properties, accessors, anonymous_methods, anonymous_types, object_collection_array_initializers, lambdas, local_functions
 csharp_new_line_before_else = true
 csharp_new_line_before_catch = true
 csharp_new_line_before_finally = true
