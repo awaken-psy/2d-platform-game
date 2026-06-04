@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2798677338246895221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7250984162494939504}
+  m_Layer: 7
+  m_Name: EnemyCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7250984162494939504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2798677338246895221}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.57, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 4997909421342518260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5535847633789087916
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +162,7 @@ GameObject:
   - component: {fileID: 4805349814003809445}
   - component: {fileID: 718034004266340254}
   - component: {fileID: 2468300432579719251}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,6 +183,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1554882242107715104}
+  - {fileID: 7250984162494939504}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &4805349814003809445
@@ -184,10 +216,10 @@ CapsuleCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.028983593, y: -0.10181904}
-  m_Size: {x: 1.1623073, y: 1.3036382}
+  m_Offset: {x: 0.028983593, y: 0.00083327293}
+  m_Size: {x: 1.1623073, y: 1.5545659}
   m_Direction: 0
 --- !u!50 &718034004266340254
 Rigidbody2D:
@@ -242,4 +274,14 @@ MonoBehaviour:
   WhatIsGround:
     serializedVersion: 2
     m_Bits: 8
+  enemyCheck: {fileID: 7250984162494939504}
+  enemyCheckRadius: 0.25
+  whatIsEnemy:
+    serializedVersion: 2
+    m_Bits: 64
+  animators:
+  - {fileID: 22100000, guid: b72a6906f01ba9c1ca8f1d4d0a3d39ad, type: 2}
+  - {fileID: 22100000, guid: 2b9f85e2f755a130489a1b5cc1c54e23, type: 2}
+  - {fileID: 22100000, guid: bf38bfff0c6c953e989d3a8d1a74f9d0, type: 2}
+  - {fileID: 22100000, guid: b96a89bda31a8fa08a2db4241426f525, type: 2}
   DeathVFX: {fileID: 6639231322804155356, guid: 082d54f39a14e25488b91c341fe7310a, type: 3}

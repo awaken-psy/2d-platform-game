@@ -1,6 +1,5 @@
 {
-  "recommendations": [
-    "ms-dotnettools.csdevkit",
-    "visualstudiotoolsforunity.vstuc"
-  ]
+    "recommendations": [
+      "visualstudiotoolsforunity.vstuc"
+    ]
 }

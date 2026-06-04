@@ -191,6 +191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3120820736184697833}
+  - component: {fileID: 3363586719477733930}
   m_Layer: 0
   m_Name: wayPoint2
   m_TagString: Untagged
@@ -213,6 +214,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3501982800205523738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3363586719477733930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749139402503985200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6289e727b5ff4be48ad4e304c15f5b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1936566757555156032
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,6 +235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8320367126411414877}
+  - component: {fileID: 550693086625488730}
   m_Layer: 0
   m_Name: wayPoint3
   m_TagString: Untagged
@@ -244,6 +258,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3501982800205523738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &550693086625488730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936566757555156032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6289e727b5ff4be48ad4e304c15f5b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2835492062087183883
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,6 +279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5234536664727949042}
+  - component: {fileID: 143237692245175060}
   m_Layer: 0
   m_Name: wayPoint1
   m_TagString: Untagged
@@ -275,6 +302,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3501982800205523738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &143237692245175060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2835492062087183883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6289e727b5ff4be48ad4e304c15f5b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7786574504492256261
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,6 +323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8100736387566996016}
+  - component: {fileID: 8591094395834603571}
   m_Layer: 0
   m_Name: wayPoint0
   m_TagString: Untagged
@@ -306,3 +346,15 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3501982800205523738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8591094395834603571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7786574504492256261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6289e727b5ff4be48ad4e304c15f5b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

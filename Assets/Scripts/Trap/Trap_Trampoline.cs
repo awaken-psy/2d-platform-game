@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 蹦床陷阱：玩家进入触发器时沿自身 up 方向施加瞬时推力，并播放激活动画。
+/// Trap_Arrow 继承此类以复用触发逻辑。
+/// </summary>
 public class Trap_Trampoline : MonoBehaviour
 {
     protected Animator anim;

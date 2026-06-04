@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 移动锯陷阱：在子对象（Trap_SawWayPoint）定义的路径点之间往返移动，到达端点后停顿 cooldown 秒并翻转 Sprite。
+/// </summary>
 public class Trap_Saw : MonoBehaviour
 {
     private Animator anim;
@@ -27,11 +30,13 @@ public class Trap_Saw : MonoBehaviour
         transform.position = wayPointPosition[0];
     }
 
+    /// <summary>
+    /// 从子对象收集路径点并缓存其世界坐标，便于运行时移动计算。
+    /// 路径点数量变化时会自动重建数组。
+    /// </summary>
     private void UpdateWayPointsInfo() {
-        // 从子对象中获取所有路径点组件
         List<Trap_SawWayPoint> wayPointList = new List<Trap_SawWayPoint>(GetComponentsInChildren<Trap_SawWayPoint>());
 
-        // 若路径点数量发生变化，重建 Transform 数组
         if (wayPointList.Count != wayPoint.Length) {
             wayPoint = new Transform[wayPointList.Count];
 
@@ -40,7 +45,6 @@ public class Trap_Saw : MonoBehaviour
             }
         }
 
-        // 固定路径点的世界坐标
         wayPointPosition = new Vector3[wayPoint.Length];
 
         for (int i = 0; i < wayPoint.Length; i++) {

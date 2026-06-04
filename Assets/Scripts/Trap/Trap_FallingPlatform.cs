@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 坠落平台陷阱：初始在两点间上下移动，玩家踩上后触发坠落流程。
+/// 触发顺序：玩家踩上 → 0.1s 轻微下沉（视觉反馈）→ fallDelay 后关闭运动并开启重力坠落。
+/// </summary>
 public class Trap_FallingPlatform : MonoBehaviour
 {
     private Animator anim;
@@ -89,6 +93,9 @@ public class Trap_FallingPlatform : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 正式坠落：停止路径移动，关闭碰撞体，取消 Kinematic 使平台受重力影响自然下落。
+    /// </summary>
     private void SwitchOffPlatform() {
         canMove = false;
 

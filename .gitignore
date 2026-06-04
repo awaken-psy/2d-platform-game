@@ -8,6 +8,9 @@ Logs/
 UserSettings/
 MemoryCaptures/
 
+# Plastic SCM (Unity Version Control)
+.plastic/
+
 # Unity 自动生成的文件
 *.pidb
 *.suo
@@ -31,3 +34,6 @@ Desktop.ini
 # Crash 报告
 sysinfo.txt
 crashlytics-build.properties
+
+#apikey
+.envrc
