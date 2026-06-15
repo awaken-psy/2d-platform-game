@@ -1,5 +1,7 @@
 # 2D Platform Game
 
+![游戏截图](2dplatformgame.png)
+
 一个基于 Unity 2022.3 LTS 的 2D 平台游戏学习项目，包含完整的玩家控制、敌人系统、陷阱系统、多关卡、UI 框架和皮肤切换等功能。
 
 ## 项目简介
